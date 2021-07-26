@@ -8,9 +8,69 @@
 </head>
 
 <body>
-  <h1> Hello World ! </h1>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-  <h2>Hello World, we are software developers!</h2>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+  <form id="survey-form" action="#">
+    <label for="name" id="name-label">
+      <input id="name" type="text" placeholder="Enter your name" required>
+    </label>
+    <label for="email" id="email-label">
+      <input id="email" type="email" placeholder="Enter your email" required>
+    </label>
+    <label for="number" id="number-label">
+      <input type="number" name="number" id="number" min="1" max="100" placeholder="Age">
+    </label>
+    <select name="drop_down" id="dropdown">
+      <option value="">Select current role</option>
+      <option value="student">Student</option>
+      <option value="ft-job">Full Time Job</option>
+      <option value="ft-learn">Full Time Learner</option>
+      <option value="undefined">Prefer not to say</option>
+      <option value="other">Other</option>
+    </select>
+    <div class="radio">
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+
+      <div>
+        <input type="radio" name="choice" id="def" value="def">
+        <label for="def">Definitely</label>
+      </div>
+      <div>
+        <input type="radio" name="choice" id="maybe" value="maybe">
+        <label for="maybe">Maybe</label>
+      </div>
+      <div>
+        <input type="radio" name="choice" id="n-sure" value="n-sure">
+        <label for="n-sure">Not sure</label>
+      </div>
+    </div>
+
+    <div class="checkboxes">
+      <div>
+        <input type="checkbox" name="to-improve" id="frontend" value="frontend">
+        <label for="frontend">Front-end Projects</label>
+      </div>
+      <div>
+        <input type="checkbox" name="to-improve" id="backend" value="backend">
+        <label for="backend">Back-end Projects</label>
+      </div>
+      <div>
+        <input type="checkbox" name="to-improve" id="data" value="data">
+        <label for="data">Data Visualization</label>
+      </div>
+    </div>
+
+    <div class="add">
+      <textarea name="add-com" id="add-com" cols="30" rows="10">
+        Enter your comment here...
+      </textarea>
+    </div>
+
+    <button type="submit" id="submit">Submit</button>
+  </form>
+
 
   <!--
 
